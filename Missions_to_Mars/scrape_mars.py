@@ -1,5 +1,6 @@
 from splinter import Browser
 from bs4 import BeautifulSoup as bs
+import pandas as pd
 import requests
 
 #Set up path to chromedriver
@@ -121,9 +122,7 @@ def scrape():
         "mars_facts_table": mars_html_table,
         "hemi_images": hemisphere_image_urls
     }
-
-    print(mars_data)
-
+    
     # Close the browser after scraping
     browser.quit()
 
