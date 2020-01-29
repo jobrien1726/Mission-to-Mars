@@ -8,7 +8,7 @@
   <title>MARS</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../static/style.css">
 </head>
 
 <body>
@@ -33,28 +33,35 @@
         </div>
 
         <div class="row">
-            <div class="col-md-7" id="featured_image">
+            <div class="col-md-12" id="featured_image">
                 <h2>Featured Mars Image</h2>
                 <img src="{{ mars.featured_image }}" alt="Mars Featured Image" id="responsive">
             </div>
-            <div class="col-md-5">
+        </div>
+        <div class="row">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body" id="weather_card">
                         <h3>Current Weather on Mars</h3>
                         <p>{{ mars.mars_weather }}</p>
                     </div>
                 </div>
-                <section>{{ mars.mars_facts_table }}</section>
+            </div>
+            <div class="col-md-6">
+                <section>
+                    <h3>Facts About Mars!</h3>
+                    <p>{{ mars.mars_facts_table|safe }}</p>
+                </section>
             </div>
         </div>
 
-        <div class="row" id="hemi_images">
-            
+        <div class="row">
+            <h1>Mars Hemispheres</h1>
             {% for hemi_image in mars.hemi_images %}
-
-            <div class="col-md-6">
+            
+            <div class="col-md-6" id="hemi_images">
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ hemi_image.img_url }}" class="card-img-top" alt="Cerberus" id="responsive">
+                    <img src="{{ hemi_image.img_url }}" class="card-img-top responsive" alt="Cerberus">
                     <div class="card-body">
                       <p class="card-text">{{ hemi_image.title }}</p>
                     </div>
