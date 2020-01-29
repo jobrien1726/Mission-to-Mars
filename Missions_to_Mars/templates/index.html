@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MARS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron text-center" id=jumbotron>
+          <h1>Mission to Mars</h1>
+          <p>Everything you need to know</p>
+          <p><a class="btn btn-primary btn-lg" href="/scrape" role="button" id="button">Get the Latest Data!</a></p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body" id="news_card">
+                        <h2>{{ mars.news_title }}</h2>
+                        <p>{{ mars.news_p_text }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7" id="featured_image">
+                <h2>Featured Mars Image</h2>
+                <img src="{{ mars.featured_image }}" alt="Mars Featured Image" id="responsive">
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body" id="weather_card">
+                        <h3>Current Weather on Mars</h3>
+                        <p>{{ mars.mars_weather }}</p>
+                    </div>
+                </div>
+                <section>{{ mars.mars_facts_table }}</section>
+            </div>
+        </div>
+        <div class="row" id="hemi_images">
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ mars.hemi_images[0].img_url }}" class="card-img-top" alt="Cerberus" id="responsive">
+                    <div class="card-body">
+                      <p class="card-text">{{ mars.hemi_images[0].title }}</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ mars.hemi_images[1].img_url }}" class="card-img-top" alt="Schiaparelli" id="responsive">
+                    <div class="card-body">
+                      <p class="card-text">{{ mars.hemi_images[1].title }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ mars.hemi_images[2].img_url }}" class="card-img-top" alt="Syrtis Major" id="responsive">
+                    <div class="card-body">
+                      <p class="card-text">{{ mars.hemi_images[2].title }}</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ mars.hemi_images[3].img_url }}" class="card-img-top" alt="Valles Marineris" id="responsive">
+                    <div class="card-body">
+                      <p class="card-text">{{ mars.hemi_images[3].title }}</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+
+</html>

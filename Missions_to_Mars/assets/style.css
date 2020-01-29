@@ -1,0 +1,28 @@
+#jumbotron {
+    background: black;
+    color: ghostwhite;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#button {
+    background: deeppink;
+    color:white;
+}
+
+#news_card {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#featured_image {
+    margin-left: 20px;
+}
+
+#hemi_images {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}
