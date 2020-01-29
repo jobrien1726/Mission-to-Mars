@@ -22,7 +22,11 @@ def scrape():
     # Collect the latest News Title and Paragraph Text
     news_title = soup.find("div", class_= "content_title").a.text
 
-    news_p = soup.find("div", class_= "article_teaser_body").text
+    try:
+        news_p = soup.find("div", class_= "article_teaser_body").text
+
+    except:
+        news_p = f"This information is not currently available."
 
     # Visit page w Featured Space Image
     space_img_url = "https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
@@ -122,12 +126,14 @@ def scrape():
         "mars_facts_table": mars_html_table,
         "hemi_images": hemisphere_image_urls
     }
-    
+
     # Close the browser after scraping
     browser.quit()
 
     # Return results
     return mars_data
+
+
 
 
 
