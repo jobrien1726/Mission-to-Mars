@@ -20,6 +20,23 @@
     margin-left: 20px;
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+#weather_card {
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+#facts_table {
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
 #hemi_images {
         display: block;
         margin-left: auto;
@@ -27,7 +44,17 @@
         width: 50%;
 }
 
-#responsive {
-    max-width: 100%;
-    height: auto;
-  }
+.hemi_header {
+    margin-left: 40px;
+}
+
+.card-img-top {
+    width: 500px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.card-text {
+    margin-left: 30px;
+    font-size: large;
+}

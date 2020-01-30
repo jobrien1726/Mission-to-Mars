@@ -39,15 +39,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" id="weather_card">
                 <div class="card">
-                    <div class="card-body" id="weather_card">
+                    <div class="card-body">
                         <h3>Current Weather on Mars</h3>
                         <p>{{ mars.mars_weather }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" id="facts_table">
                 <section>
                     <h3>Facts About Mars!</h3>
                     <p>{{ mars.mars_facts_table|safe }}</p>
@@ -56,12 +56,12 @@
         </div>
 
         <div class="row">
-            <h1>Mars Hemispheres</h1>
+            <h1 class="hemi_header">Mars Hemispheres</h1>
             {% for hemi_image in mars.hemi_images %}
             
             <div class="col-md-6" id="hemi_images">
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ hemi_image.img_url }}" class="card-img-top responsive" alt="Cerberus">
+                    <img src="{{ hemi_image.img_url }}" class="card-img-top" alt="Cerberus">
                     <div class="card-body">
                       <p class="card-text">{{ hemi_image.title }}</p>
                     </div>
