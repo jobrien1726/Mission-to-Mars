@@ -17,3 +17,7 @@ The goal of this project was to build a web application that uses Beautiful Soup
 - Bootstrap
 - Flask
 - MongoDB
+
+## Web Scraping
+
+
