@@ -36,8 +36,8 @@ Jupyter Notebook, Pandas, Beautiful Soup, and Requests/Splinter were used to scr
 
 MongoDB with Flask templating was used to create a new HTML page that displays all of the information that was scraped from the URLs above.
 
-![](screenshots/screenshot1_top.png)
+![](Mission_to_Mars/screenshots/screenshot1_top.png)
 
-![](screenshots/screenshot2_middle.png)
+![](Mission_to_Mars/screenshots/screenshot2_middle.png)
 
-![](screenshots/screenshot3_bottom.png)
+![](Mission_to_Mars/screenshots/screenshot3_bottom.png)
