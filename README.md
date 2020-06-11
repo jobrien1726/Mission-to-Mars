@@ -39,5 +39,3 @@ MongoDB with Flask templating was used to create a new HTML page that displays a
 ![](Missions_to_Mars/screenshots/screenshot1_top.png)
 
 ![](Missions_to_Mars/screenshots/screenshot2_middle.png)
-
-![](Missions_to_Mars/screenshots/screenshot3_bottom.png)
