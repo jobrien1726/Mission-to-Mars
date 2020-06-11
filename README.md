@@ -32,4 +32,12 @@ Jupyter Notebook, Pandas, Beautiful Soup, and Requests/Splinter were used to scr
 
 5. High resolution images for each of Mar's hemispheres from the [USGS Astrogeology site](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars)
 
+## MongoDB and Flask Applocation
 
+MongoDB with Flask templating was used to create a new HTML page that displays all of the information that was scraped from the URLs above.
+
+![](screenshots/screenshot1_top.png)
+
+![](screenshots/screenshot2_middle.png)
+
+![](screenshots/screenshot3_bottom.png)
